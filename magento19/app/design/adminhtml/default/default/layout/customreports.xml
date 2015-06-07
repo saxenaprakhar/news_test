@@ -1,0 +1,8 @@
+<?xml version ="1.0"?>
+    <layout version="1.0.0" ?>
+        <customreports_adminhtml_customreports_index>
+            <reference name="content">
+                <block type="customreports/adminhtml_customreports" name="customreports" />
+            </reference>
+        </customreports_adminhtml_customreports_index>
+    </layout>

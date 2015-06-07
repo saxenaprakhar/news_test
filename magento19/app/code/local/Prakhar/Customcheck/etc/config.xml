@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<config>
+    <modules>
+        <prakhar_customcheck>
+            <version>
+                0.1.0
+            </version>
+        </prakhar_customcheck>
+    </modules>
+    <global>
+        <models>
+            <prakhar_customcheck>
+                <class>Prakhar_Customcheck_Model</class>
+                <resourceModel>prakhar_customcheck_mysql4</resourceModel>
+            </prakhar_customcheck>
+            <prakhar_customcheck_mysql4>
+                <class>Prakhar_Customcheck_Model_Mysql4</class>
+                <entities>
+                    <entity>
+                        <table>prakhar_customcheck_entity</table>
+                    </entity>
+                    <item>
+                        <table>prakhar_customcheck_item</table>
+                    </item>
+                    <type>
+                        <table>prakhar_customcheck_type</table>
+                    </type>
+                </entities>
+            </prakhar_customcheck_mysql4>
+
+        </models>
+        <blocks>
+            <prakhar_customcheck>
+                <class>Prakhar_Customcheck_Block</class>
+            </prakhar_customcheck>
+        </blocks>
+        <helpers>
+            <prakhar_customcheck>
+                <class>Prakhar_Customcheck_Helper</class>
+            </prakhar_customcheck>
+        </helpers>
+        <resources>
+            <prakhar_customcheck_setup>
+                <setup>
+                    <module>Prakhar_Customcheck</module>
+                    <class>Prakhar_Customcheck_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </prakhar_customcheck_setup>
+            <prakhar_customcheck_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </prakhar_customcheck_write>
+            <prakhar_customcheck_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </prakhar_customcheck_read>
+
+        </resources>
+    </global>
+</config>
